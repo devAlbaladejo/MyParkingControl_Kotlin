@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddParkingActivity">
+
+    <ImageView
+        android:id="@+id/ivPhotoAdd"
+        android:layout_width="294dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:baselineAlignBottom="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/ibCameraAdd"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:background="#153C9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivPhotoAdd"
+        app:layout_constraintTop_toTopOf="@+id/ivPhotoAdd"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/lblDateAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Fecha:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhotoAdd" />
+
+    <TextView
+        android:id="@+id/tvDateAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="11-02-2022"
+        android:textColor="#505050"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDateAdd"
+        app:layout_constraintStart_toEndOf="@+id/lblDateAdd"
+        app:layout_constraintTop_toTopOf="@+id/lblDateAdd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblTimeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Hora:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/lblDateAdd" />
+
+    <TextView
+        android:id="@+id/tvTimeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="23:55"
+        android:textColor="#505050"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTimeAdd"
+        app:layout_constraintStart_toEndOf="@+id/lblTimeAdd"
+        app:layout_constraintTop_toTopOf="@+id/lblTimeAdd" />
+
+    <TextView
+        android:id="@+id/lblLocationAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ubicación:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/lblTimeAdd" />
+
+    <TextView
+        android:id="@+id/tvLocationAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="38.40451975182909, -0.5296638263093131"
+        android:textColor="#505050"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblLocationAdd"
+        app:layout_constraintStart_toEndOf="@+id/lblLocationAdd"
+        app:layout_constraintTop_toTopOf="@+id/lblLocationAdd"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblSetLocationAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Indicar ubicación"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ibMapAdd"
+        app:layout_constraintStart_toStartOf="@+id/ibMapAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationAdd" />
+
+    <ImageButton
+        android:id="@+id/ibMapAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnyadir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/marker" />
+
+    <Button
+        android:id="@+id/btnAnyadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="GUARDAR UBICACION"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

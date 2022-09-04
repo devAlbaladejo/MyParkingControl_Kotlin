@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyParkingControl</string>
+    <string name="show_date_start">%s</string>
+    <string name="show_date_end">%s</string>
+    <string name="show_time_start">%s</string>
+    <string name="show_time_end">%s</string>
+    <string name="show_location">%s</string>
+    <string name="show_location_rv">Ubicación: %s</string>
+    <string name="text_mail">Hola,\n\nTe mando la ubicación del aparcamiento\n\n %s\n\nUn saludo.</string>
+    <string name="txt_error">Este campo no puede estar vacío</string>
+
+    <!-- activity_add_parking -->
+    <string name="label_date">Fecha:</string>
+    <string name="label_time">Hora:</string>
+    <string name="label_location">Ubicación:</string>
+
+    <!-- Diálogos -->
+    <string name="dialog_title_parking">Salir</string>
+    <string name="dialog_title_map">Guardar Ubicación</string>
+    <string name="dialog_title_unpark">Desaparcar</string>
+    <string name="dialog_text_parking">¿Está seguro que quieres salir?</string>
+    <string name="dialog_text_map">¿Quieres guardar la ubicación actual para el parking?</string>
+    <string name="dialog_text_unpark">¿Está seguro que quieres desaparcar?</string>
+    <string name="dialog_yes">Sí</string>
+    <string name="dialog_no">No</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="dialog_permissions_title">Permisos de aplicación</string>
+    <string name="dialog_permissions_text">Deberás conceder el permiso desde los ajustes de la aplicación.</string>
+
+    <!-- SnackBar -->
+    <string name="snack_delete">Parking eliminado!</string>
+    <string name="snack_delete_fail">No se puedo eliminar el parking.</string>
+    <string name="snack_unpark">Se ha desaparcado correctamente!</string>
+    <string name="snack_unpark_fail">Este parking no está activo.</string>
+</resources>

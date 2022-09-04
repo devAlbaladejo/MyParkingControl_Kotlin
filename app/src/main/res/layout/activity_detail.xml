@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivPhotoInfo"
+        android:layout_width="294dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/ibCameraInfo"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:background="#153C9F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivPhotoInfo"
+        app:layout_constraintTop_toTopOf="@+id/ivPhotoInfo"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/lblDateStartInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="Fecha Entrada:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhotoInfo" />
+
+    <TextView
+        android:id="@+id/tvDateStartInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="11/02/2022"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDateStartInfo"
+        app:layout_constraintStart_toEndOf="@+id/lblDateStartInfo"
+        app:layout_constraintTop_toTopOf="@+id/lblDateStartInfo" />
+
+    <TextView
+        android:id="@+id/lblTimeStartInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Hora Entrada:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDateStartInfo"
+        app:layout_constraintStart_toEndOf="@+id/tvDateStartInfo"
+        app:layout_constraintTop_toTopOf="@+id/tvDateStartInfo" />
+
+    <TextView
+        android:id="@+id/tvTimeStartInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="23:55"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTimeStartInfo"
+        app:layout_constraintStart_toEndOf="@+id/lblTimeStartInfo"
+        app:layout_constraintTop_toTopOf="@+id/lblTimeStartInfo" />
+
+    <TextView
+        android:id="@+id/lblDateEndInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Fecha Salida:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDateStartInfo" />
+
+    <TextView
+        android:id="@+id/tvDateEndInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="11/02/2022"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDateEndInfo"
+        app:layout_constraintStart_toEndOf="@+id/lblDateEndInfo"
+        app:layout_constraintTop_toTopOf="@+id/lblDateEndInfo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblTimeEndInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Hora Salida:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDateEndInfo"
+        app:layout_constraintStart_toEndOf="@+id/tvDateEndInfo"
+        app:layout_constraintTop_toTopOf="@+id/tvDateEndInfo" />
+
+    <TextView
+        android:id="@+id/tvTimeEndInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="23:55"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblTimeEndInfo"
+        app:layout_constraintStart_toEndOf="@+id/lblTimeEndInfo"
+        app:layout_constraintTop_toTopOf="@+id/lblTimeEndInfo" />
+
+    <TextView
+        android:id="@+id/lblLocationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Ubicación:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDateEndInfo" />
+
+    <TextView
+        android:id="@+id/tvLocationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="38.40451975182909, -0.5296638263093131"
+        app:layout_constraintBottom_toBottomOf="@+id/lblLocationInfo"
+        app:layout_constraintStart_toEndOf="@+id/lblLocationInfo"
+        app:layout_constraintTop_toTopOf="@+id/lblLocationInfo" />
+
+    <TextView
+        android:id="@+id/lblMapInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Ver Ubicación"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ibMapInfo"
+        app:layout_constraintEnd_toEndOf="@+id/ibMapInfo"
+        app:layout_constraintStart_toStartOf="@+id/ibMapInfo" />
+
+    <ImageButton
+        android:id="@+id/ibMapInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblLocationInfo"
+        app:srcCompat="@drawable/marker" />
+
+    <TextView
+        android:id="@+id/lblMailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Enviar por Correo"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ibMailInfo"
+        app:layout_constraintEnd_toEndOf="@+id/ibMailInfo"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/ibMailInfo" />
+
+    <ImageButton
+        android:id="@+id/ibMailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/ibMapInfo"
+        app:layout_constraintStart_toEndOf="@+id/ibMapInfo"
+        app:layout_constraintTop_toTopOf="@+id/ibMapInfo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/email" />
+
+    <Button
+        android:id="@+id/btnUnpark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Desaparcar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Aparcar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etMailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="angel.albaladejo@gmail.com"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ibMailInfo"
+        app:layout_constraintStart_toStartOf="@+id/ibMailInfo"
+        app:layout_constraintTop_toBottomOf="@+id/ibMailInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
